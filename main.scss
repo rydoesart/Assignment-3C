@@ -11,7 +11,7 @@ $font-weights: (
 
 body {
   background: $primary-color;
-  font-weight: map-get($font-weights, bold);
+  
 }
 
 .main {
@@ -19,12 +19,7 @@ body {
   margin: 0 auto;
 
   p {
-    
+    font-weight: map-get($font-weights, bold);
   }
 }
 
-.main p {
-  color: $text-color;
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
