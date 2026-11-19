@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>Contact Mike Smith</title>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+            <span class="menu-btn__burger" aria-hidden="true"></span>
+        </button>
+        <nav class="nav" id="site-nav" aria-label="Main navigation">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a class="menu-nav__link" href="index.html">Home</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="about.html">About Me</a></li>
+                <li class="menu-nav__item"><a class="menu-nav__link" href="projects.html">My Projects</a></li>
+                <li class="menu-nav__item active"><a class="menu-nav__link" href="contact.html" aria-current="page">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h1>Contact Me</h1>
+            <div class="contact__list" aria-label="Fictional sample contact details">
+                <div class="contact__email">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> Email
+                    <div class="text-secondary"><a href="mailto:hello@example.com">hello@example.com</a></div>
+                </div>
+                <div class="contact__phone">
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i> Phone
+                    <div class="text-secondary"><a href="tel:+12025550147">(202) 555-0147</a></div>
+                </div>
+                <div class="contact__address">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Address
+                    <div class="text-secondary">123 First Street<br>Houston, TX</div>
+                </div>
+            </div>
+            <div class="social-icons" aria-label="Example social profiles">
+                <a role="link" tabindex="0" aria-disabled="true" aria-label="Twitter example profile"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a>
+                <a role="link" tabindex="0" aria-disabled="true" aria-label="Facebook example profile"><i class="fab fa-facebook fa-2x" aria-hidden="true"></i></a>
+                <a role="link" tabindex="0" aria-disabled="true" aria-label="Instagram example profile"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a>
+                <a role="link" tabindex="0" aria-disabled="true" aria-label="GitHub example profile"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+            </div>
+            <footer>&copy; 2026 Mike Smith</footer>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
