@@ -20,6 +20,12 @@
   }
 }
 
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
 body {
   background: $primary-color;
   color: $text-color;
@@ -33,6 +39,10 @@ body {
   @include flexCenter(row);
   width: 80%;
   margin: 0 auto;
+
+  @include mobile {
+    flex-direction: column;
+  }
 
   #{&}__paragraph {
     font-weight: weight(bold);
