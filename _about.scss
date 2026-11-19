@@ -61,6 +61,10 @@
   }
 
   footer {
-    transform: rotate(90deg) translate(-3rem, -5rem);
+    right: 2.25rem;
+    bottom: 1rem;
+    padding: 0;
+    transform: rotate(90deg);
+    transform-origin: right bottom;
   }
 }
