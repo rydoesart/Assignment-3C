@@ -13,3 +13,18 @@ body {
   background: $primary-color;
   font-weight: map-get($font-weights, bold);
 }
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  p {
+    
+  }
+}
+
+.main p {
+  color: $text-color;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
