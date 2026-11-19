@@ -16,7 +16,7 @@
   font-size: 5rem;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #fff;
 }
 .home__name--last {
   color: #ff652f;
@@ -25,7 +25,7 @@
 
 body {
   background: #272727;
-  color: #ffffff;
+  color: #fff;
   height: 100vh;
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1;
@@ -36,7 +36,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -72,7 +72,7 @@ footer {
   right: 1rem;
   text-align: right;
   padding: 1rem 0;
-  color: #ffffff;
+  color: #fff;
 }
 
 :focus-visible {
