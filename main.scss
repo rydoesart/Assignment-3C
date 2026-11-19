@@ -11,5 +11,5 @@ $font-weights: (
 
 body {
   background: $primary-color;
-  font-weight: map-get($font-weights, "regular");
+  font-weight: map-get($font-weights, bold);
 }
