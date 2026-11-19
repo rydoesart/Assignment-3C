@@ -18,7 +18,7 @@ body {
   width: 80%;
   margin: 0 auto;
 
-  p {
+  .main__paragraph {
     font-weight: map-get($font-weights, bold);
   }
 }
