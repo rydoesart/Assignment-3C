@@ -1,13 +1,13 @@
-:root {
-  $primary-color: #272727;
-  $accent-color: #ff652f;
-  $text-color: #ffffff;
-  $font-weights: (
+
+$primary-color: #272727;
+$accent-color: #ff652f;
+$text-color: #ffffff;
+$font-weights: (
     "regular": 400,
     "medium": 500,
     "bold": 700
-  )
-}
+);
+
 
 body {
   background: $primary-color;
