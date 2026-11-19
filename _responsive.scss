@@ -49,3 +49,13 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@include media-lg {
+  .projects__items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
