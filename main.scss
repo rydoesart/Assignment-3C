@@ -37,7 +37,7 @@ body {
 
 .main {
   @include flexCenter(row);
-  width: 80%;
+  width: 80% - 40%;
   margin: 0 auto;
 
   @include mobile {
