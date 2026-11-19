@@ -332,6 +332,46 @@
   position: absolute;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+    overflow: visible;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    transform: translateX(0);
+    padding-right: 1.5rem;
+    transition: none;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    font-size: 1.5rem;
+  }
+  .projects__bio-image {
+    height: 40vh;
+  }
+  .projects__bio-image .text-secondary {
+    font-size: 3rem;
+  }
+  .projects__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 body {
   background: #272727;
   color: #fff;
