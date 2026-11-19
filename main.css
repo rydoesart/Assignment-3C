@@ -1,3 +1,4 @@
 body {
-  background: var(--primary-color);
+   --primary-color: #272727;
+ background: var(--primary-color);
 }/*# sourceMappingURL=main.css.map */
