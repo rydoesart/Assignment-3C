@@ -44,8 +44,16 @@ body {
     flex-direction: column;
   }
 
-  #{&}__paragraph {
+  #{&}__paragraph1 {
     font-weight: weight(bold);
+
+    &:hover {
+      color: pink;
+    }
+  }
+
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
 
     &:hover {
       color: $accent-color;
