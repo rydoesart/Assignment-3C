@@ -1,1 +1,1 @@
-:root{--primary-color: #272727;--accent-color: #ff652f;--text-color: #ffffff}body{background:blue}/*# sourceMappingURL=main.min.css.map */
+body{background:var(--primary-color)}/*# sourceMappingURL=main.min.css.map */
