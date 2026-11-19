@@ -9,6 +9,11 @@ body {
   color: #ffffff;
 }
 
+.light {
+  background: white;
+  color: black;
+}
+
 .main {
   display: flex;
   justify-content: center;
