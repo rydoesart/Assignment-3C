@@ -3,6 +3,9 @@ const hamburger = document.querySelector('.menu-btn__burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.menu-nav');
 const navItems = document.querySelectorAll('.menu-nav__item');
+const navLinks = document.querySelectorAll('.menu-nav__link');
+const main = document.querySelector('main');
+const desktop = window.matchMedia('(min-width: 768px)');
 
 let showMenu = false;
 
@@ -25,4 +28,43 @@ function toggleMenu() {
 
   menuBtn.setAttribute('aria-expanded', showMenu);
   menuBtn.setAttribute('aria-label', showMenu ? 'Close navigation' : 'Open navigation');
+  main.inert = showMenu;
+
+  if (showMenu) {
+    requestAnimationFrame(() => {
+      if (showMenu) navLinks[0].focus();
+    });
+  }
 }
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (showMenu) toggleMenu();
+  });
+});
+
+document.addEventListener('keydown', event => {
+  if (!showMenu) return;
+
+  if (event.key === 'Escape') {
+    toggleMenu();
+    menuBtn.focus();
+  }
+
+  if (event.key === 'Tab') {
+    const lastLink = navLinks[navLinks.length - 1];
+
+    if (event.shiftKey && document.activeElement === menuBtn) {
+      event.preventDefault();
+      lastLink.focus();
+    } else if (!event.shiftKey && document.activeElement === lastLink) {
+      event.preventDefault();
+      menuBtn.focus();
+    }
+  }
+});
+
+desktop.addEventListener('change', event => {
+  if (showMenu) toggleMenu();
+  if (!event.matches && nav.contains(document.activeElement)) menuBtn.focus();
+});

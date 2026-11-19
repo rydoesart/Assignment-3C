@@ -69,3 +69,10 @@ footer {
   outline: 2px solid $accent-color;
   outline-offset: 3px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
+}

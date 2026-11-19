@@ -444,4 +444,11 @@ footer {
 :focus-visible {
   outline: 2px solid #ff652f;
   outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+  }
 }/*# sourceMappingURL=main.css.map */
